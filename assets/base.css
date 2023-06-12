@@ -3,7 +3,8 @@
   --alpha-button-border: 1;
   --alpha-link: 0.85;
   --alpha-badge-border: 0.1;
-  --color-primary: #3ceebf;
+  --color-primary: #9381ff;
+  --color-primary-hover: #7158ff;
 }
 
 .product-card-wrapper .card,
