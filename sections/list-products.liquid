@@ -1,4 +1,9 @@
-<div>Holaaaaaaaaa</div>
+    <div>
+    holaaaaa
+      {% for product in collections['joyeria'].products %}
+          {{- product.title | link_to: product.url }}
+        {% endfor %}
+    </div>
 
 {% schema %}
 {
