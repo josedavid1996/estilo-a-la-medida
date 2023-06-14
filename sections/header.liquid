@@ -1,16 +1,10 @@
-<link rel="stylesheet" href="{{ 'header.css' | asset_url }}" media="print" onload="this.media='all'">
-
-
-<noscript>{{ 'header.css' | asset_url | stylesheet_tag }}</noscript>
-
-
-<header class="header">
+<header class="header-new">
 {% comment %} LOGO {% endcomment %}
-<div class="header__logo">
+<div class="header-new__logo">
 <p>Estilo a la medida</p>
 </div>
 {% comment %} LINKS {% endcomment %}
-<nav class="header__nav">
+<nav class="header-new__nav">
 <ul class="nav__gruop-list">
 {% for linklist in linklists %}
   {% if linklist.handle == 'main-menu' %}
@@ -26,4 +20,21 @@
 </nav>
 
 {% comment %} ICONS {% endcomment %}
+
+    <div class="header-new__icons">
+        <a>
+          <img src="{{ 'person.svg' | asset_url }}"/>
+        </a>
+        <a>
+          <img src="{{ 'heart.svg' | asset_url }}"/>
+        </a>
+        <a>
+          <img src="{{ 'cart.svg' | asset_url }}"/>
+        </a>
+        <a class="icon-menu">
+          <img src="{{ 'bars-solid.svg' | asset_url }}"/>
+        </a>
+
+    </div>
 </header>
+
