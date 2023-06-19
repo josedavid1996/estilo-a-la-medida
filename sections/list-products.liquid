@@ -1,8 +1,79 @@
-    <div>
-    holaaaaa
-      {% for product in collections['joyeria'].products %}
-          {{- product.title | link_to: product.url }}
-        {% endfor %}
+    <div class="list-products__container">
+
+    <div class="list-products__titles" >
+            {% for collection in collections  %}
+            <h3 id={{collection.title}} class="{% if collection.title == "hombre" %}is-active-title{% endif %}">
+          {{ collection.title | camelize }}
+            </h3>
+            {% endfor %}
+    </div>
+    
+
+    {% comment %} Productos de hombre {% endcomment %}
+      <div class="list-products__cards animate__animated animate__fadeInLeft" id="list-products-hombre">
+          {% for product in collections['hombre'].products limit: 6 %}
+          {% comment %} {{- product.title | link_to: product.url }} {% endcomment %}
+            <div class="list-products__card">
+          <div class="list-products__card__new">NEW</div>
+            <div class="list-products__card__img">
+            <img src="{{product.featured_image | image_url}}"  />
+            </div>
+            <h4 class="list-products__card__title">
+            {{product.title}}
+            </h4>
+            <h4 class="list-products__card__price">
+            {{product.price | money_with_currency}}
+            </h4>
+            <button class="list-products__card__button">Agregar al carrito</button>
+            </div>
+
+            
+          {% endfor %}
+      </div>
+    {% comment %} Productos de joyery {% endcomment %}
+      <div class="list-products__cards is-active-card animate__animated animate__fadeInLeft" id="list-products-joyeria">
+          {% for product in collections['joyeria'].products limit: 6 %}
+          {% comment %} {{- product.title | link_to: product.url }} {% endcomment %}
+            <div class="list-products__card">
+          <div class="list-products__card__new">NEW</div>
+            <div class="list-products__card__img">
+            <img src="{{product.featured_image | image_url}}"  />
+            </div>
+            <h4 class="list-products__card__title">
+            {{product.title}}
+            </h4>
+            <h4 class="list-products__card__price">
+            {{product.price | money_with_currency}}
+            </h4>
+            <button class="list-products__card__button">Agregar al carrito</button>
+            </div>
+
+            
+          {% endfor %}
+      </div>
+    {% comment %} Productos de mujer {% endcomment %}
+      <div class="list-products__cards is-active-card animate__animated animate__fadeInLeft" id="list-products-mujer">
+          {% for product in collections['mujer'].products limit: 6 %}
+          {% comment %} {{- product.title | link_to: product.url }} {% endcomment %}
+            <div class="list-products__card">
+          <div class="list-products__card__new">NEW</div>
+            <div class="list-products__card__img">
+            <img src="{{product.featured_image | image_url}}"  />
+            </div>
+            <h4 class="list-products__card__title">
+            {{product.title}}
+            </h4>
+            <h4 class="list-products__card__price">
+            {{product.price | money_with_currency}}
+            </h4>
+            <button class="list-products__card__button">Agregar al carrito</button>
+            </div>
+
+            
+          {% endfor %}
+      </div>
+  
+ 
     </div>
 
 {% schema %}
