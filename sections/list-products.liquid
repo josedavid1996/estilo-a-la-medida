@@ -10,10 +10,10 @@
     
 
     {% comment %} Productos de hombre {% endcomment %}
-      <div class="list-products__cards animate__animated animate__fadeInLeft" id="list-products-hombre">
+      <div class="list-products__cards " id="list-products-hombre">
           {% for product in collections['hombre'].products limit: 6 %}
           {% comment %} {{- product.title | link_to: product.url }} {% endcomment %}
-            <div class="list-products__card">
+            <div class="list-products__card animate__animated animate__zoomIn">
           <div class="list-products__card__new">NEW</div>
             <div class="list-products__card__img">
             <img src="{{product.featured_image | image_url}}"  />
@@ -31,10 +31,10 @@
           {% endfor %}
       </div>
     {% comment %} Productos de joyery {% endcomment %}
-      <div class="list-products__cards is-active-card animate__animated animate__fadeInLeft" id="list-products-joyeria">
+      <div class="list-products__cards is-active-card " id="list-products-joyeria">
           {% for product in collections['joyeria'].products limit: 6 %}
           {% comment %} {{- product.title | link_to: product.url }} {% endcomment %}
-            <div class="list-products__card">
+            <div class="list-products__card animate__animated animate__zoomIn">
           <div class="list-products__card__new">NEW</div>
             <div class="list-products__card__img">
             <img src="{{product.featured_image | image_url}}"  />
@@ -52,10 +52,10 @@
           {% endfor %}
       </div>
     {% comment %} Productos de mujer {% endcomment %}
-      <div class="list-products__cards is-active-card animate__animated animate__fadeInLeft" id="list-products-mujer">
+      <div class="list-products__cards is-active-card " id="list-products-mujer">
           {% for product in collections['mujer'].products limit: 6 %}
           {% comment %} {{- product.title | link_to: product.url }} {% endcomment %}
-            <div class="list-products__card">
+            <div class="list-products__card animate__animated animate__zoomIn">
           <div class="list-products__card__new">NEW</div>
             <div class="list-products__card__img">
             <img src="{{product.featured_image | image_url}}"  />
