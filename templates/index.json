@@ -79,12 +79,19 @@
       "settings": {
         "section_banner_publicitario": "Información importante"
       }
+    },
+    "f9ca55ff-efea-47d0-b05b-e98ee96bd8f7": {
+      "type": "banner-info",
+      "settings": {
+        "section_banner_Info": "Información importante"
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
     "2ad70d26-9ffb-486a-8ce4-aa86e4654c14",
-    "e0a52d4e-0109-4535-9b76-5b303f61537a"
+    "e0a52d4e-0109-4535-9b76-5b303f61537a",
+    "f9ca55ff-efea-47d0-b05b-e98ee96bd8f7"
   ]
 }
