@@ -73,11 +73,18 @@
       "settings": {
         "section_title_products": "Información importante"
       }
+    },
+    "e0a52d4e-0109-4535-9b76-5b303f61537a": {
+      "type": "banner",
+      "settings": {
+        "section_banner_publicitario": "Información importante"
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "2ad70d26-9ffb-486a-8ce4-aa86e4654c14"
+    "2ad70d26-9ffb-486a-8ce4-aa86e4654c14",
+    "e0a52d4e-0109-4535-9b76-5b303f61537a"
   ]
 }
