@@ -8,6 +8,17 @@
   --color-primary-opacity: #d8d1ff;
 }
 
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+@media screen and (min-width: 600px) {
+  .main-container {
+    gap: 30px;
+  }
+}
 .product-card-wrapper .card,
 .contains-card--product {
   --border-radius: var(--product-card-corner-radius);
